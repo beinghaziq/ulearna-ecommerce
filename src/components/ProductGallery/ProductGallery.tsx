@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import InnerImageZoom from 'react-inner-image-zoom';
 import ZoomableImage from './ZoomImage';
 
 export default function ProductGallery({ images }: { images: string[] }) {
@@ -31,26 +30,6 @@ export default function ProductGallery({ images }: { images: string[] }) {
 
             <div className="md:col-span-3 relative aspect-square rounded-lg bg-gray-100 overflow-hidden">
                 <ZoomableImage src={images[selectedImage]} alt={"Main product image"} />
-                {/* <Image
-                    src={images[selectedImage]}
-                    alt="Main product image"
-                    fill
-                    className="object-cover object-center"
-                    priority
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                /> */}
-
-                {/* <div className="relative w-full max-w-md h-[400px] sm:h-[500px] mx-auto overflow-hidden custom-zoom-wrapper">
-                    <InnerImageZoom
-                        src={images[selectedImage]}
-                        zoomSrc={images[selectedImage]}
-                        zoomType="hover"
-                        zoomPreload={true}
-                        alt="Zoomable image"
-                        className="rounded-md" // only for zoom lens, not the actual image
-                    />
-                </div> */}
-
                 <div className="absolute inset-0 flex items-center justify-center md:hidden">
                     <button
                         onClick={() => setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
