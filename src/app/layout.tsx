@@ -1,4 +1,5 @@
 // app/layout.tsx
+import Header from '@/components/Header/Header';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -13,14 +14,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-50">
-          <header className="bg-white shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
-              <h1 className="text-xl font-bold text-gray-900">Laced Up</h1>
-            </div>
-          </header>
-          
+          <Header/>
           {children}
-          
           <footer className="bg-white border-t border-gray-200 mt-12">
             <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
               <p className="text-center text-sm text-gray-500">
