@@ -33,7 +33,6 @@ export default function CartPage() {
           </div>
         ) : (
           <div className="lg:grid lg:grid-cols-12 lg:gap-x-12">
-            {/* Cart items */}
             <div className="lg:col-span-8">
               <ul className="divide-y divide-gray-200">
                 {cart.map((item) => (
@@ -103,7 +102,6 @@ export default function CartPage() {
               </div>
             </div>
 
-            {/* Order summary */}
             <div className="lg:col-span-4 mt-8 lg:mt-0">
               <div className="bg-gray-50 rounded-lg p-6">
                 <h2 className="text-lg font-medium text-gray-900 mb-4">Order Summary</h2>
@@ -141,7 +139,7 @@ export default function CartPage() {
 
                 <div className="mt-6 flex justify-center text-sm text-center text-gray-500">
                   <p>
-                    or{' '}
+                    or {' '}
                     <Link
                       href="/products"
                       className="font-medium text-indigo-600 hover:text-indigo-500"

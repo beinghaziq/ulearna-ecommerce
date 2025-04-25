@@ -91,10 +91,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setIsCartOpen(!isCartOpen);
   };
 
-  // Calculate total number of items in cart
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-
-  // Calculate total price of all items in cart
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
     0
