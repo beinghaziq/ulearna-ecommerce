@@ -57,7 +57,7 @@ https://www.loom.com/share/1218afe0596c45bb8275955b02d83e26
 
 1. **Clone the Repository**:
    ```bash
-   git clone [<repository-url>](https://github.com/beinghaziq/ulearna-ecommerce.git)
+   git clone https://github.com/beinghaziq/ulearna-ecommerce.git
    cd repo
    ```
 2. **Install Packages**:
