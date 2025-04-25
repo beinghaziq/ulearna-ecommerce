@@ -12,7 +12,7 @@ export default function ProductsPage() {
        <DashboardSlider/>
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center">
-            <button className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200">
+            <button className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200 text-gray-800">
               <FilterIcon className="h-5 w-5" />
               <span>Filters</span>
             </button>
@@ -21,7 +21,7 @@ export default function ProductsPage() {
             <select
               id="sort"
               name="sort"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              className="mt-1 text-gray-800 block border-gray-600 w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
             >
               <option>Most Popular</option>
               <option>Newest</option>
