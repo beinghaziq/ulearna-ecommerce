@@ -22,9 +22,17 @@ A responsive, accessible, and high-performance e-commerce product page built usi
 ### 5. Responsive Design
 - Fully responsive across devices (mobile, tablet, desktop)
 
-`(Ideally, a demo video should be put here.)`
+# Demo Video:
+https://www.loom.com/share/1218afe0596c45bb8275955b02d83e26
 
-<img width="1409" alt="Screenshot 2023-11-09 at 7 17 12 PM" src="https://github.com/beinghaziq/awesome-readme/assets/72576839/c884958c-f0dd-4ae1-bdcc-39a888cddcb8">
+# Responsiveness
+
+![WhatsApp Image 2025-04-26 at 00 04 19](https://github.com/user-attachments/assets/0ac8761d-8656-4899-a78f-7a618f4e2bd5)
+![WhatsApp Image 2025-04-26 at 00 04 19 (2)](https://github.com/user-attachments/assets/f00bbd59-5659-4daa-82d3-b045c2057215)
+![WhatsApp Image 2025-04-26 at 00 04 19 (1)](https://github.com/user-attachments/assets/d6577acb-a346-4570-bd25-b089c93c36c5)
+![WhatsApp Image 2025-04-26 at 00 04 18](https://github.com/user-attachments/assets/1f434a4c-e2bf-4571-b290-44d68dd2078a)
+![WhatsApp Image 2025-04-26 at 00 04 18 (1)](https://github.com/user-attachments/assets/aa788329-b55e-4596-92ec-d4ad714ca156)
+![WhatsApp Image 2025-04-26 at 00 04 17](https://github.com/user-attachments/assets/5ae90c07-692a-4bfc-8d8e-d11a9d2cc1f9)
 
 
 # Build With
@@ -36,46 +44,33 @@ A responsive, accessible, and high-performance e-commerce product page built usi
 - Testing: Jest + React Testing Library
 - Image Optimization: Next.js Image component
 - Error Handling: Graceful error and loading states
+- Linter: eslint
 
 # Getting Started
 
 ## Prerequisites
 
 - npm
-
-  ```bash
-  npm install npm@latest -g
-  ```
+- node
 
 ## Installation
 
 1. **Clone the Repository**:
    ```bash
-   git clone [<repository-url>](https://github.com/Owner/repo.git)
+   git clone [<repository-url>](https://github.com/beinghaziq/ulearna-ecommerce.git)
    cd repo
-   create a .env file and copy content from .env.example to it
    ```
-2. **Build the Docker Images**:
+2. **Install Packages**:
    ```bash
-   docker-compose build
+   npm install
    ```
-3. **Initialize the Database**:
-   - Before starting the application for the first time, ensure that the database is set up correctly.
+3. **Run Server**:
    ```bash
-   docker-compose up -d db
-   docker-compose run web rails db:create db:migrate
+   npm run dev
    ```
-   - Now run the application with
-   ```bash
-   docker-compose up
-   ```
-
-## API Documentation
-
-add postman or Swagger link here
 
 ## Run Tests
 
 ```bash
-    rpsec
+    npm test
 ```
