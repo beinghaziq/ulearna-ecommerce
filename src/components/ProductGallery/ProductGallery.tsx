@@ -1,12 +1,10 @@
 "use client"
 
 import Image from 'next/image';
-import { useState } from 'react';
 import ZoomableImage from './ZoomImage';
 
-export default function ProductGallery({ images }: { images: string[] }) {
-    const [selectedImage, setSelectedImage] = useState(0);
-
+export default function ProductGallery({ images, selectedImage, setSelectedImage }: { images: string[], selectedImage: number, setSelectedImage: any }) {
+    
     return (
         <div className="flex flex-col-reverse md:grid md:grid-cols-4 md:gap-6">
 

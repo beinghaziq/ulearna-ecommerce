@@ -1,10 +1,15 @@
 'use client'
 
-// components/AddToCart.tsx
 import { useState } from 'react';
+import { useCart } from '@/context/CartContext';
 
-export default function AddToCart({ price }: { price: number }) {
+export default function AddToCart({ price, color, size, image, name }: { price: number, color: string, size: string, image: string, name: string }) {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
+
+  const addProductToCart = () => {
+    addToCart({ name, color, price, image, id: '1' })
+  }
 
   return (
     <div className="mt-10">
@@ -34,6 +39,7 @@ export default function AddToCart({ price }: { price: number }) {
 
         <button
           type="button"
+          onClick={() => addProductToCart()}
           className="flex-1 bg-indigo-600 py-3 px-8 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded-md"
         >
           Add to cart
