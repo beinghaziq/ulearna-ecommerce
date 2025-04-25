@@ -1,6 +1,4 @@
 'use client'
-// components/VariantSelector.tsx
-import { useState } from 'react';
 
 export default function VariantSelector({
   type,
